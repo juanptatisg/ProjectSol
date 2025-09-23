@@ -21,4 +21,4 @@ void FLoadingScreenModule::StartLoadingScreen()
 }
 
 //Registers this module withg Unreal Engine's Module system
-IMPLEMENT_GAME_MODULE(FLoadingScreenModule, LoadingScreenModule);
+void IMPLEMENT_GAME_MODULE(FLoadingScreenModule, LoadingScreenModule);
