@@ -3,14 +3,15 @@
 #pragma once
 
 #include "CoreMinimal.h"
-#include "Engine/GameInstance.h"
+#include "Engine\GameInstance.h"
 #include "LoadingGameInstance.generated.h"
 
 /**
  * 
  */
-UCLASS()
-class PROJECTDISCO_API ULoadingGameInstance : public UGameInstance
+UCLASS() 
+
+	class PROJECTDISCO_API ULoadingGameInstance : public UGameInstance
 {
 	GENERATED_BODY()
 	
