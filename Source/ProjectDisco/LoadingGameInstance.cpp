@@ -32,12 +32,11 @@ void ULoadingGameInstance::BeginLoadingScreen(const FString& InMapName)
 	//Set minimum time for loading
 	LoadingScreen.MinimumLoadingScreenDisplayTime = 0.5f;
 
-
 	//Create and assign a basic test widget for the loading screen
-	//LoadingScreen.WidgetLoadingScreen = FLoadingScreenAttributes::NewTestLoadingScreenWidget();
+	LoadingScreen.WidgetLoadingScreen = FLoadingScreenAttributes::NewTestLoadingScreenWidget();
 
 
-	
+	/*
 	
 	//Prevent users from skipping the loading screen movie
 	LoadingScreen.bMoviesAreSkippable = false;
@@ -46,24 +45,22 @@ void ULoadingGameInstance::BeginLoadingScreen(const FString& InMapName)
 	//Should be located within Content/Movies directory
 	LoadingScreen.MoviePaths.Add(TEXT("LoadingScreenMovie"));
 
-	
+	*/
 
 
 	//Tell the MoviePlayer to display our loading screen with these settings
 	GetMoviePlayer()->SetupLoadingScreen(LoadingScreen);
 
-	
+	/*
 	
 	//Start playing the movie
 	GetMoviePlayer()->PlayMovie();
 	
-	
+	*/
 }
 
 void ULoadingGameInstance::EndLoadingScreen(UWorld* InLoadedWorld)
 {
 	UE_LOG(LogTemp, Warning, TEXT("ULoadingGameInstance::EndLoadingScreen: %s"), *InLoadedWorld->GetName());
-
-	
 
 }
