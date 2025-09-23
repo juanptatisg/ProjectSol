@@ -13,20 +13,12 @@ using UnrealBuildTool;
             //Use shared precompiled headers for better compile times
             PCHUsage = PCHUsageMode.UseSharedPCHs;
 
-            PublicDependencyModuleNames.AddRange(
-                new string[] {
-                    "Core",
-                    "Modules"
-                }
-            );
-
-
             //Add core unreal engine modules as private dependencies
             PrivateDependencyModuleNames.AddRange(
                 new string[] {
                     "Core",         //Core UE functionality
-                    "CoreUObject"   //Base UObject system
-                   
+                    "CoreUObject",   //Base UObject system
+                    
                 }
             );
         }
