@@ -30,7 +30,7 @@ void ULoadingGameInstance::BeginLoadingScreen(const FString& InMapName)
 	LoadingScreen.bAutoCompleteWhenLoadingCompletes = false;
 
 	//Set minimum time for loading
-	LoadingScreen.MinimumLoadingScreenDisplayTime = 0.5f;
+	LoadingScreen.MinimumLoadingScreenDisplayTime = 2.0f;
 
 
 	//Create and assign a basic test widget for the loading screen
